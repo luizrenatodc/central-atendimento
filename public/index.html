@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Central de Atendimento</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="central.css">
+</head>
+<body>
+<header class="barra">
+  <strong class="logo">Central</strong>
+  <div class="numeros" id="numeros"></div>
+  <div class="eu">
+    <label>Entrar como <select id="quem" aria-label="Atendente"></select></label>
+    <select id="presenca" aria-label="Sua presença"><option value="online">Online</option><option value="pausa">Pausa</option><option value="offline">Offline</option></select>
+  </div>
+</header>
+<div class="corpo">
+  <aside class="lista"><div class="abas" id="abas" role="tablist"></div><div id="conversas"></div></aside>
+  <main class="conversa" id="conversa"><div class="vazio">Selecione uma conversa</div></main>
+  <aside class="painel" id="painel"></aside>
+</div>
+<script type="module" src="central.js"></script>
+</body>
+</html>
